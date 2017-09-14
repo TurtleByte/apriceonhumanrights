@@ -1,2 +1,2 @@
-# Steven Universe Hiatus Counter
-Because yeah
+# Price On Your Rights
+I like counters
