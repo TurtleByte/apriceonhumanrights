@@ -36,13 +36,29 @@
     <div class="count">
         <h1 style="font-size:400%">The 2018 Price for Your Rights<sup><small><a href="http://cnnphilippines.com/news/2017/09/12/Commission-on-Human-Rights-CHR-House-budget.html">1</a></small></sup></h1>
 		<h1>If the Philippine Commission on Human Rights had been granted its requested budget, it would have received</h1>
-		<h1>₱<span id="n">0.00</span> since opening this page.</h1>
+		<h1>₱<span id="n">0.00</span> since you opened this page.</h1>
 		<h1>Instead, the government will have given it</h1>
-		<h1>₱<span id="m">0.00</span> since opening this page.</h1>
+		<h1>₱<span id="m">0.00</span> since you opened this page.</h1>
 	</div>
 
+<!--
+	For simplicity's sake, use US $1 = ₱50
+	Suppose ₱1000 = 365 days (largest Filipino bill, entire Commission budget)
+	₱500 = 182d12h
+	₱200 = 73d
+	₱100 = 36d12h
+	₱50 = 18d6h
+	₱20 = 7d7h12m (smallest Filipino bill)
+	₱10 = 3d15h36m (largest Filipino coin)
+	₱5 = 1d19h48m
+	₱1 = 8h45m36s
+	25¢ = 2h11m24s
+	10¢ = 52m33s600ms
+	5¢ = 26m16s800ms (smallest Filipino coin)
+	1¢ = 5m15s360ms
+-->
+	
 <script type="text/javascript">
-
 //turuslan's HackTimer
 (function(s){var w,f={},o=window,l=console,m=Math,z='postMessage',x='HackTimer.js by turuslan: ',v='Initialisation failed',p=0,r='hasOwnProperty',y=[].slice,b=o.Worker;function d(){do{p=0x7FFFFFFF>p?p+1:0}while(f[r](p));return p}if(!/MSIE 10/i.test(navigator.userAgent)){try{s=o.URL.createObjectURL(new Blob(["var f={},p=postMessage,r='hasOwnProperty';onmessage=function(e){var d=e.data,i=d.i,t=d[r]('t')?d.t:0;switch(d.n){case'a':f[i]=setInterval(function(){p(i)},t);break;case'b':if(f[r](i)){clearInterval(f[i]);delete f[i]}break;case'c':f[i]=setTimeout(function(){p(i);if(f[r](i))delete f[i]},t);break;case'd':if(f[r](i)){clearTimeout(f[i]);delete f[i]}break}}"]))}catch(e){}}if(typeof(b)!=='undefined'){try{w=new b(s);o.setInterval=function(c,t){var i=d();f[i]={c:c,p:y.call(arguments,2)};w[z]({n:'a',i:i,t:t});return i};o.clearInterval=function(i){if(f[r](i))delete f[i],w[z]({n:'b',i:i})};o.setTimeout=function(c,t){var i=d();f[i]={c:c,p:y.call(arguments,2),t:!0};w[z]({n:'c',i:i,t:t});return i};o.clearTimeout=function(i){if(f[r](i))delete f[i],w[z]({n:'d',i:i})};w.onmessage=function(e){var i=e.data,c,n;if(f[r](i)){n=f[i];c=n.c;if(n[r]('t'))delete f[i]}if(typeof(c)=='string')try{c=new Function(c)}catch(k){l.log(x+'Error parsing callback code string: ',k)}if(typeof(c)=='function')c.apply(o,n.p)};w.onerror=function(e){l.log(e)};l.log(x+'Initialisation succeeded')}catch(e){l.log(x+v);l.error(e)}}else l.log(x+v+' - HTML5 Web Worker is not supported')})('HackTimerWorker.min.js');
 
@@ -61,7 +77,6 @@
 
 	function loop2(){
 	money2 = money2 + 0.000003171;
-	money2 = Math.round(money2 * 1000000000) / 1000000000;
 	var m = money2.toFixed(4);
 	document.getElementById("m").innerHTML = m;
 	};
@@ -69,8 +84,6 @@
 	window.setInterval(function(){
 		loop2();
 	}, 100);
-	
-	
-	</script>
+</script>
 </body>
 </html>
