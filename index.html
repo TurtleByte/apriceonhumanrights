@@ -1,10 +1,11 @@
+
 <html lang="en">
 <head>
 	<title>The 2018 Price For Your Rights</title>
 	<style type="text/css">
 	div{
 	font-family: "Titillium Web";
-	text-align: center;
+	text-align: left;
 	color: white;
 	width: 80%;
 	}
@@ -31,10 +32,10 @@
 <body>
     <div class="count">
         <h1 style="font-size:400%">The 2018 Price for Your Rights</h1>
-		<h1>Since opening this page, the Philippine Commission on Human Rights would have gotten the requested</h1>
-		<h1 style="font-size:300%">₱<span id="money">0.00</span> in funding.</h1>
-		<h1>Instead, they will have recieved</h1>
-		<h1 style="font-size:300%">₱<span id="money2">0.00</span>.</h1>
+		<h1>If the Philippine Commission on Human Rights had been granted its requested budget, it would have received</h1>
+		<h1>₱<span id="n">0.00</span> since opening this page.</h1>
+		<h1>Instead, the government will have given it</h1>
+		<h1>₱<span id="money2">0.00</span> since opening this page.</h1>
 	</div>
 
 	<script type="text/javascript">
@@ -44,7 +45,8 @@
 	function loop(){
 	money = money + 1.07496194825;
 	money = Math.round(money * 100) / 100;
-	document.getElementById("money").innerHTML = money;
+	var n = money.toFixed(2);
+	document.getElementById("n").innerHTML = n;
 	};
 	
 	window.setInterval(function(){
